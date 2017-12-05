@@ -44,7 +44,6 @@ class Accounts extends REST_Controller {
     function index_put() {
         $username = $this->put('username');
         $data = array(
-                    'username'      => $this->put('username'),
                     'password'          => $this->put('password'),
                     'email'       => $this->put('email'));
         $this->db->where('username', $username);
