@@ -28,7 +28,18 @@ class Users extends REST_Controller {
                     'ttl'           => $this->post('ttl'),
                     'alamat'        => $this->post('alamat'),
                     'rt'            => $this->post('rt'),
+<<<<<<< HEAD
                     'telepon'       => $this->post('telepon'),
+=======
+<<<<<<< HEAD
+                    'rw'            => $this->post('rw'),
+                    'desa'          => $this->post('desa'),
+                    'telepon'       => $this->post('telepon'),
+                    'pekerjaan'     => $this->post('pekerjaan'),
+=======
+                    'telepon'       => $this->post('telepon'),
+>>>>>>> f208dada5bf03a970f400c3292ec6c870a90f650
+>>>>>>> 215836c4ac6d9b725035417ef02251396e78d784
                     'lat'           => $this->post('lat'),
                     'lng'           => $this->post('lng'),
                     'jabatan'       => $this->post('jabatan'));
@@ -74,4 +85,8 @@ class Users extends REST_Controller {
         }
     }
  
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 215836c4ac6d9b725035417ef02251396e78d784
