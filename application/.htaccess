@@ -2,15 +2,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-<<<<<<< HEAD
 RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
 
-=======
-RewriteRule ^(.*)$ index.php/$1 [L] 
-<<<<<<< HEAD
-</IfModule>
-=======
-</IfModule>
->>>>>>> f208dada5bf03a970f400c3292ec6c870a90f650
->>>>>>> 215836c4ac6d9b725035417ef02251396e78d784
