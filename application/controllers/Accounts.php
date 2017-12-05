@@ -9,14 +9,20 @@ class Accounts extends REST_Controller {
     }
  
     // show data mahasiswa
+    //login dengan menggunakan uri queri
+    //example mobprog.com/accounts?username=achmad@gmail.com&password=achmad
+    //i think its a better approach for login
     function index_get() {
         $username = $this->get('username');
-        if ($username == '') {
+        $password = $this->get('password');
+        // if ($username == '') {
+        //     $users = $this->db->get('accounts')->result();
+        // } else {
+            $this->db->where('username', $username)->or_where('email', $username);
+            $this->db->where('password', $password);
+            // $data=$users-result();
             $users = $this->db->get('accounts')->result();
-        } else {
-            $this->db->where('username', $username);
-            $users = $this->db->get('accounts')->result();
-        }
+        // }
         $this->response($users, 200);
     }
  
@@ -61,5 +67,4 @@ class Accounts extends REST_Controller {
             $this->response(array('status' => 'fail', 502));
         }
     }
- 
 }

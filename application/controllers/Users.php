@@ -19,6 +19,8 @@ class Users extends REST_Controller {
         }
         $this->response($users, 200);
     }
+
+    
  
     // insert new data to mahasiswa
     function index_post() {
@@ -28,7 +30,10 @@ class Users extends REST_Controller {
                     'ttl'           => $this->post('ttl'),
                     'alamat'        => $this->post('alamat'),
                     'rt'            => $this->post('rt'),
+                    'rw'            => $this->post('rw'),
+                    'desa'            => $this->post('desa'),
                     'telepon'       => $this->post('telepon'),
+                    'desa'            => $this->post('desa'),
                     'lat'           => $this->post('lat'),
                     'lng'           => $this->post('lng'),
                     'jabatan'       => $this->post('jabatan'));
@@ -44,13 +49,17 @@ class Users extends REST_Controller {
     function index_put() {
         $username = $this->put('username');
         $data = array(
-                    'username'      => $this->put('username'),
+                    //username not to be updated, might cause data inconsistency
+                    // 'username'      => $this->put('username'),
                     'nama'          => $this->put('nama'),
                     'ttl'           => $this->put('ttl'),
                     'alamat'        => $this->put('alamat'),
-                    'rt'            => $this->put('rt'),
-                    'telepon'       => $this->put('telepon'),
-                    'lat'           => $this->put('lat'),
+                    'rt'            => $this->post('rt'),
+                    'rw'            => $this->post('rw'),
+                    'desa'            => $this->post('desa'),
+                    'telepon'       => $this->post('telepon'),
+                    'desa'            => $this->post('desa'),
+                    'lat'           => $this->post('lat'),
                     'lng'           => $this->put('lng'),
                     'jabatan'       => $this->put('jabatan'));
         $this->db->where('username', $username);
