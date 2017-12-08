@@ -19,11 +19,8 @@ class Users extends REST_Controller {
         }
         $this->response($users, 200);
     }
-<<<<<<< HEAD
-=======
 
     
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8
  
     // insert new data to mahasiswa
     function index_post() {
@@ -33,14 +30,10 @@ class Users extends REST_Controller {
                     'ttl'           => $this->post('ttl'),
                     'alamat'        => $this->post('alamat'),
                     'rt'            => $this->post('rt'),
-<<<<<<< HEAD
-                    'telepon'       => $this->post('telepon'),
-=======
                     'rw'            => $this->post('rw'),
                     'desa'            => $this->post('desa'),
                     'telepon'       => $this->post('telepon'),
                     'desa'            => $this->post('desa'),
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8
                     'lat'           => $this->post('lat'),
                     'lng'           => $this->post('lng'),
                     'jabatan'       => $this->post('jabatan'));
@@ -56,27 +49,16 @@ class Users extends REST_Controller {
     function index_put() {
         $username = $this->put('username');
         $data = array(
-<<<<<<< HEAD
-                    'username'      => $this->put('username'),
                     'nama'          => $this->put('nama'),
                     'ttl'           => $this->put('ttl'),
                     'alamat'        => $this->put('alamat'),
                     'rt'            => $this->put('rt'),
+                    'rw'            => $this->put('rw'),
+                    'desa'          => $this->put('desa'),
                     'telepon'       => $this->put('telepon'),
+		    'pekerjaan'	    => $this->put('pekerjaan'),
+                    'desa'          => $this->put('desa'),
                     'lat'           => $this->put('lat'),
-=======
-                    //username not to be updated, might cause data inconsistency
-                    // 'username'      => $this->put('username'),
-                    'nama'          => $this->put('nama'),
-                    'ttl'           => $this->put('ttl'),
-                    'alamat'        => $this->put('alamat'),
-                    'rt'            => $this->post('rt'),
-                    'rw'            => $this->post('rw'),
-                    'desa'            => $this->post('desa'),
-                    'telepon'       => $this->post('telepon'),
-                    'desa'            => $this->post('desa'),
-                    'lat'           => $this->post('lat'),
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8
                     'lng'           => $this->put('lng'),
                     'jabatan'       => $this->put('jabatan'));
         $this->db->where('username', $username);
@@ -100,8 +82,4 @@ class Users extends REST_Controller {
         }
     }
  
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8

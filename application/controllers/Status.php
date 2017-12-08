@@ -24,9 +24,9 @@ class Status extends REST_Controller {
     function index_post() {
         $data = array(
                     'username'      => $this->post('username'),
-                    'status'          => $this->post('password'),
+                    'status'          => $this->post('status'),
                     'waktu'       => $this->post('waktu'),
-                    'liked'			=> $this ->post('liked'));
+                    'liked'			=> $this->post('liked'));
         $insert = $this->db->insert('status', $data);
         if ($insert) {
             $this->response($data, 200);
@@ -39,9 +39,9 @@ class Status extends REST_Controller {
     function index_put() {
         $username = $this->put('username');
         $data = array(
-                    'status'          => $this->put('password'),
+                    'status'          => $this->put('status'),
                     'waktu'       => $this->put('waktu'),
-                    'liked'			=> $this ->put('liked'));
+                    'liked'			=> $this->put('liked'));
         $this->db->where('username', $username);
         $update = $this->db->update('status', $data);
         if ($update) {
