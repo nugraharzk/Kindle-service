@@ -76,21 +76,16 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 <<<<<<< HEAD
-	'hostname' => 'fdb4.awardspace.net',
-	'username' => '2534544_restful',
-	'password' => 'mobproghore80',
-	'database' => '2534544_restful',
-=======
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'kindle_restfull',
-//	'hostname' => 'fdb4.awardspace.net',
-//	'username' => '2534544_restful',
-//	'password' => 'mobproghore80',
-//	'database' => '2534544_restful',
-
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8
+=======
+	'hostname' => 'fdb4.awardspace.net',
+	'username' => '2534544_restful',
+	'password' => 'mobproghore80',
+	'database' => '2534544_restful',
+>>>>>>> f208dada5bf03a970f400c3292ec6c870a90f650
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
