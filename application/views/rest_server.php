@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>REST Server Tests</title>
+    <title>REST Server Kindle Mobprog</title>
 
     <style>
 
@@ -71,7 +71,7 @@
 <body>
 
 <div id="container">
-    <h1>REST Server Tests</h1>
+    <h1>REST Server Kindle Mobprog</h1>
 
     <div id="body">
 
