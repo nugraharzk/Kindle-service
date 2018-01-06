@@ -9,7 +9,11 @@
   
 <div class="login-box">
   <div class="login-logo">
+<<<<<<< HEAD
     <a href="../../index2.html"><b>SISFO</b>ASET</a>
+=======
+    <a href="../../index2.html"><b>KINDLE</b><br>Web Services</a>
+>>>>>>> f0e6f9cd69ccd2857bf618b4295b8c8d4735d276
   </div>
   <!-- /.login-logo -->
 

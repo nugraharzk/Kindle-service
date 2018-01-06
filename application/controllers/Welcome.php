@@ -22,6 +22,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->helper('url');
 
+<<<<<<< HEAD
+=======
+		//$this->load->view('welcome_message');
+>>>>>>> f0e6f9cd69ccd2857bf618b4295b8c8d4735d276
 		$this->load->view('v_login');
 	}
 }
