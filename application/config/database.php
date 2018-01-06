@@ -70,34 +70,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-/*
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-<<<<<<< HEAD
-/*<<<<<<< HEAD*/
-	/*'hostname' => 'fdb4.awardspace.net',
-=======
 	'hostname' => 'fdb4.awardspace.net',
->>>>>>> f0e6f9cd69ccd2857bf618b4295b8c8d4735d276
 	'username' => '2534544_restful',
-	'password' => 'mobproghore80',*/
+	'password' => 'mobproghore80',
 	'database' => '2534544_restful',
-<<<<<<< HEAD
-/*=======*/
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	// 'database' => 'kindle_restfull',
-//	'hostname' => 'fdb4.awardspace.net',
-//	'username' => '2534544_restful',
-//	'password' => 'mobproghore80',
-//	'database' => '2534544_restful',
-
-/*>>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8*/
-=======
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -113,30 +94,3 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-*/
-$active_group = 'default';
-$query_builder = TRUE;
-
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'kindle_restfull',
->>>>>>> f0e6f9cd69ccd2857bf618b4295b8c8d4735d276
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-

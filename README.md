@@ -1,21 +1,3 @@
-# Kindle Service
-this code provide web UI and REST API for [Kindle Android](https://github.com/amaceh/kindle-app) Application
-in this code, config of database, base url and .htaccess is for local use only, please be carefull when updating server
-
-
-
-
-
-
-
-
-
-
-
-
-
-Below is CI ORIGINAL REST README
-
 # CodeIgniter Rest Server
 
 [![Gitter chat](https://badges.gitter.im/chriskacerguis/codeigniter-restserver.png)](https://gitter.im/codeigniter-restserver/Lobby)

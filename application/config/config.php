@@ -23,12 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'http://localhost/mobprog.atwebpages.com/';
-=======
-//$config['base_url'] = 'http://mobprog.atwebpages.com/';
-$config['base_url'] = '';
->>>>>>> f0e6f9cd69ccd2857bf618b4295b8c8d4735d276
+$config['base_url'] = 'http://mobprog.atwebpages.com/';
 
 /*
 |--------------------------------------------------------------------------

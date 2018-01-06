@@ -8,6 +8,6 @@ class Rest_server extends CI_Controller {
     {
         $this->load->helper('url');
 
-        $this->load->view('v_front');
+        $this->load->view('rest_server');
     }
 }
