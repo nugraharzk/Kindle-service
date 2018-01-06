@@ -2,11 +2,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-<<<<<<< HEAD
+RewriteCond $1 !^(index\.php|assets)
 RewriteRule ^(.*)$ index.php/$1 [L] 
 </IfModule>
-=======
-RewriteRule ^(.*)$ index.php/$1 [L]
-</IfModule>
-
->>>>>>> 355a4db691049aadd0f99eb18364d78d6a1298b8
