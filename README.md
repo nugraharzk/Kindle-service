@@ -16,6 +16,7 @@ In this code, config of database, base url and .htaccess is for local use only, 
 
 Below is CI ORIGINAL REST README
 
+=======
 # CodeIgniter Rest Server
 
 [![Gitter chat](https://badges.gitter.im/chriskacerguis/codeigniter-restserver.png)](https://gitter.im/codeigniter-restserver/Lobby)
