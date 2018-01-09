@@ -1,6 +1,6 @@
 # Kindle Service
-this code provide web UI and REST API for [Kindle Android](https://github.com/amaceh/kindle-app) Application
-in this code, config of database, base url and .htaccess is for local use only, please be carefull when updating server
+this code provide web UI and REST API for [Kindle Android](https://github.com/amaceh/kindle-app) Application.
+In this code, config of database, base url and .htaccess is for local use only, please be carefull when updating server
 
 
 

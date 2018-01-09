@@ -112,6 +112,83 @@ class Warga extends CI_Controller {
 		$this->m_accounts->update_account($username,$arr);
 		redirect('warga');
 	}
+
+	public function edit($username)
+	{
+		$data['page_title'] = 'Edit Warga';
+		$data['page_desc'] = 'Perubahan Data Warga Tetap';
+		$dat['warga'] = $this->m_users->get_user($username);
+
+		$data['page'] = $this->load->view('warga/v_edit', $dat, true);
+		$this->load->view('v_base',$data);
+		
+	}
+
+	public function upload_home($username)
+	{
+		$type="house";
+		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+		    $new_image_name = $username."_".$type;
+		    $config['upload_path'] = 'uploads/'.$type.'/'; 
+		    $config['allowed_types'] = 'gif|jpg|png|bmp|jpeg';
+		    $config['file_name'] = $new_image_name;
+		    $config['max_size']  = '0';
+		    $config['max_width']  = '0';
+		    $config['max_height']  = '0';
+		    $config['$min_width'] = '0';
+		    $config['min_height'] = '0';
+		    $config['overwrite'] = true;
+
+		    $this->load->library('upload', $config);
+		    if ( ! $this->upload->do_upload('foto_rumah'))
+            {
+                $file = $this->upload->display_errors();
+            }
+            else
+            {
+                 $file = $this->upload->data();
+            }
+            // var_dump($file);
+			// $data['file'] = $file['file_name'];
+            $arr['house_image'] = $file['file_name'];
+			$this->m_users->update_user($username,$arr);
+			// $this->AdminModel->uploadingFile($data);
+			redirect(site_url('warga/edit/'.$username));
+		}
+	}
+
+	public function upload_profile($username)
+	{
+		$type="profile";
+		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+		    $new_image_name = $username."_".$type;
+		    $config['upload_path'] = 'uploads/'.$type.'/'; 
+		    $config['allowed_types'] = 'gif|jpg|png|bmp|jpeg';
+		    $config['file_name'] = $new_image_name;
+		    $config['max_size']  = '0';
+		    $config['max_width']  = '0';
+		    $config['max_height']  = '0';
+		    $config['$min_width'] = '0';
+		    $config['min_height'] = '0';
+		    $config['overwrite'] = true;
+
+		    $this->load->library('upload', $config);
+		    if ( ! $this->upload->do_upload('foto_profil'))
+            {
+                $file = $this->upload->display_errors();
+            }
+            else
+            {
+                 $file = $this->upload->data();
+            }
+            // var_dump($file);
+			// $data['file'] = $file['file_name'];
+            $arr['profile_image'] = $file['file_name'];
+			$this->m_users->update_user($username,$arr);
+			// $this->AdminModel->uploadingFile($data);
+			redirect(site_url('warga/edit/'.$username));
+		}
+	}
 }
 
 /* End of file asset.php */

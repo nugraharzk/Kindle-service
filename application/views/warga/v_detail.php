@@ -47,12 +47,21 @@
                   <td><?=$warga->jabatan?></td>
                 </tr>
             </tbody></table><br>
-            <div class="col-md-2 col-md-push-5">
+            <div class="col-md-3 col-md-push-5">
+              <!-- Edit Foto Hanya untuk Pak RT dan Yang bersangkutan?-->
+              <?php if ($_SESSION["level"]=="RT" || $_SESSION["username"]==$warga->username) {
+               ?>
+              <?=anchor('warga/edit/'.$warga->username, 'Edit Foto', [
+                'class' => 'btn btn-warning',
+                'role'  => 'button'
+              ])?>
+              <?php } ?>
               <?=anchor('warga', 'Kembali', [
                 'class' => 'btn btn-primary',
                 'role'  => 'button'
               ])?>
             </div>
+            
           </div>
           <!-- /.box-body -->
           <div class="box-footer clearfix">
